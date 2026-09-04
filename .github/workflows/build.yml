@@ -10,7 +10,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    # ubuntu-22.04 (ve daha yenisi) buildozer-action ile bazen
+    # OpenJDK paket deposu (PPA) hatası veriyor ("does not have a
+    # Release file"). ubuntu-20.04 bu action için bilinen en
+    # kararlı sürüm, o yüzden onu kullanıyoruz.
+    runs-on: ubuntu-20.04
     steps:
       - name: Kodu çek
         uses: actions/checkout@v4
