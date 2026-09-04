@@ -119,6 +119,7 @@ android.res_xml = file_paths.xml
 
 # FileProvider androidx.core.content.FileProvider sınıfını
 # kullanır, bu yüzden AndroidX desteği açık olmalı.
+
 android.enable_androidx = True
 
 # (int) Target Android API, should be as high as possible.
