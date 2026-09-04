@@ -1,0 +1,21 @@
+<!--
+    Bu içerik buildozer tarafından AndroidManifest.xml'in
+    <application> etiketi İÇİNE eklenir
+    (android.extra_manifest_application_arguments ile).
+
+    Kamera ile fotoğraf çekme özelliği (fotograf.py), Android
+    7.0+ (API 24+) üzerinde çekilen dosyayı kamera uygulamasına
+    "content://" adresi olarak vermek ZORUNDADIR; ham
+    "file://" yolu vermek güvenlik nedeniyle reddedilir ve
+    kamera hiç açılmaz / sessizce başarısız olur. Bu provider
+    o content:// adresini üretir.
+-->
+<provider
+    android:name="androidx.core.content.FileProvider"
+    android:authorities="${applicationId}.fileprovider"
+    android:exported="false"
+    android:grantUriPermissions="true">
+    <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+</provider>

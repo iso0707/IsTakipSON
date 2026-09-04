@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Kamera ile çekilen fotoğrafın kaydedildiği "fotograflar"
+    klasörünün (ve genel olarak uygulamanın dahili dosya
+    alanının) FileProvider ile paylaşılabilmesi için gereken
+    yollar. Geniş tutuldu (path=".") ki uygulamanın gerçek
+    çalışma zamanı klasör yapısı değişse bile bozulmasın.
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <files-path
+        name="app_files"
+        path="." />
+
+    <external-files-path
+        name="app_external_files"
+        path="." />
+
+    <cache-path
+        name="app_cache"
+        path="." />
+
+    <external-cache-path
+        name="app_external_cache"
+        path="." />
+
+</paths>

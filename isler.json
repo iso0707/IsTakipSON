@@ -1,0 +1,29 @@
+[
+    {
+        "is_adi": "havuz",
+        "yer": "Karaöz",
+        "musteri": "tuncay",
+        "telefon": "53113413",
+        "aciklama": "",
+        "durum": "Bitti",
+        "baslangic": "01.09.2026",
+        "bitis": "09.09.2026",
+        "gelir": 5000.0,
+        "iscilik": 5000.0,
+        "gider": 0,
+        "diger_giderler": [],
+        "malzemeli": true,
+        "malzemeler": [
+            {
+                "ad": "boru",
+                "adet": 1,
+                "birim": "Adet",
+                "birim_fiyat": 100.0,
+                "fiyat": 100.0,
+                "odendi": false
+            }
+        ],
+        "fotograflar": [],
+        "tarih": "01.09.2026 22:36"
+    }
+]
